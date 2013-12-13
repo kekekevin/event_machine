@@ -17,6 +17,11 @@ EventMachine.run do
   puts "starting event machine server"
   
   EventMachine.start_server("0.0.0.0", ARGV[0], EchoServer)
+  
+  EM.add_periodic_timer(1) do
+    puts "time elapsed"
+  end
+  
 end
 
 puts "event machine stopped..?"
