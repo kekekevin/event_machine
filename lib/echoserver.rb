@@ -9,7 +9,6 @@ class EchoServer < EM::Connection
   
   def receive_data(data)
     puts data
-    send_data(data)
   end
   
 end
