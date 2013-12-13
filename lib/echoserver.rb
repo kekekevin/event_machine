@@ -19,3 +19,5 @@ EventMachine.run do
   
   EventMachine.start_server("0.0.0.0", ARGV[0], EchoServer)
 end
+
+puts "event machine stopped..?"
