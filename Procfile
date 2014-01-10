@@ -1,1 +1,1 @@
-web: bundle exec lib/echoserver.rb $PORT
+web: bundle exec lib/sinatra.rb $PORT

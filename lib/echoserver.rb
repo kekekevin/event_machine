@@ -17,7 +17,7 @@ class EchoServer < EM::Connection
 end
 
 EventMachine.run do
-  port = ARGV[0] || 8111
+  port = ARGV[0] || 8181
   puts "starting event machine server on #{port}"
   
   EventMachine.start_server("0.0.0.0", port, EchoServer)

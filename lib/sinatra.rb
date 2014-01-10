@@ -94,4 +94,4 @@ class HelloApp < Sinatra::Base
 end
 
 # start the application
-run app: HelloApp.new
+run app: HelloApp.new, port: ARGV[0]
