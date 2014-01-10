@@ -23,10 +23,3 @@ EventMachine.run do
   EventMachine.start_server("0.0.0.0", port, EchoServer)
     
 end
-
-puts "event machine stopped..?"
-
-CREATE TABLE Securities(
-  cusip varchar(9),
-  isin varchar(13),
-  name varchar(255),
