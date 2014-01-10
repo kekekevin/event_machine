@@ -17,10 +17,16 @@ class EchoServer < EM::Connection
 end
 
 EventMachine.run do
-  puts "starting event machine server"
+  port = ARGV[0] || 8111
+  puts "starting event machine server on #{port}"
   
-  EventMachine.start_server("0.0.0.0", ARGV[0], EchoServer)
+  EventMachine.start_server("0.0.0.0", port, EchoServer)
     
 end
 
 puts "event machine stopped..?"
+
+CREATE TABLE Securities(
+  cusip varchar(9),
+  isin varchar(13),
+  name varchar(255),
